@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+node_modules/
+
+# Generated reports — keep the repo about the skill, not its outputs
+*-feasibility.md
+*-tasks.md
+*-可行性分析.md
+*-开发任务清单.md
