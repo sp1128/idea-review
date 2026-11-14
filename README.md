@@ -24,8 +24,8 @@ Two Markdown files:
 
 | File | Contents |
 |---|---|
-| `<slug>-feasibility.md` | Restated idea, research findings, a 7-dimension scorecard, a one-sentence verdict, how this most likely dies, and — if the verdict isn't "no" — the technical plan |
-| `<slug>-tasks.md` | Dependency-ordered tasks with machine-checkable acceptance criteria, sized half a day to two days each, ready to hand to a coding agent |
+| `<slug>-feasibility.md` | Verdict up front, then the restated idea, what already exists (competitors, dead predecessors, open source), a 7-dimension scorecard, how this most likely dies, the next step, and — if the verdict isn't "no" — the technical plan. Every source is listed. |
+| `<slug>-tasks.md` | A context block for the coding agent, then dependency-ordered tasks with machine-checkable acceptance criteria, sized half a day to two days each. For a "build it if" verdict it holds only the validation experiment. |
 
 ## Install
 
@@ -70,8 +70,8 @@ Clarify (≤3 questions)
    ↓
 Restate the idea in 4 lines  ← if you can't fill these in, the idea isn't formed yet
    ↓
-Parallel research  ← competitors · open-source alternatives · enabling tech & unit cost
-   ↓                  demand signal · regulatory tripwires
+Parallel research  ← competitors · dead predecessors · open-source alternatives
+   ↓                  enabling tech & unit cost · demand signal · distribution · regulatory tripwires
 Scorecard (7 dimensions, 1–5)
    ↓
 Verdict: build it / build it if / build something smaller / don't build it
@@ -79,6 +79,8 @@ Verdict: build it / build it if / build something smaller / don't build it
 Technical plan (architecture, stack, hard parts, MVP boundary, milestones)
    ↓
 Task list for a coding agent
+   ↓
+Pushback?  ← the verdict moves for new facts, not for enthusiasm
 ```
 
 ### The scorecard
@@ -92,6 +94,8 @@ Task list for a coding agent
 | Cost & effort | Person-months, plus recurring cost (hosting, APIs, moderation). |
 | Path to revenue | Who pays, how much, when. |
 | Risk | Compliance, platform dependency, legal, single points of failure. |
+
+5 is always the favourable end, so a 5 on Risk means safe. Scores are not averaged: one fatal dimension outweighs four good ones, and a 1 on pain, feasibility or risk rules out a plain "build it". For a personal tool, Market size and Path to revenue are marked "n/a" instead of counting against the idea.
 
 A scorecard where everything lands on 4 is noise. The skill is instructed to give a 2 when a 2 is right.
 
@@ -113,7 +117,7 @@ Acceptance criteria must be machine-checkable or click-checkable. "Delivers a go
 
 ## Language
 
-`SKILL.md` is in English. A Chinese version lives in [`i18n/SKILL.zh-CN.md`](i18n/SKILL.zh-CN.md) — the skill's instructions are what shapes the report's language, so to get Chinese output, install that file as `SKILL.md` instead:
+The reports are written in whatever language you pitch the idea in, so the English `SKILL.md` works for any language. A Chinese version lives in [`i18n/SKILL.zh-CN.md`](i18n/SKILL.zh-CN.md); it adds Chinese file names and Chinese-community research sources (V2EX, Xiaohongshu). To use it, install that file as `SKILL.md` instead:
 
 ```bash
 cp i18n/SKILL.zh-CN.md SKILL.md
