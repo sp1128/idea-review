@@ -27,7 +27,7 @@ Two Markdown files:
 | `<slug>-feasibility.md` | Verdict up front, then the restated idea, what already exists (competitors, dead predecessors, open source), a 7-dimension scorecard, how this most likely dies, the next step, and — if the verdict isn't "no" — the technical plan. Every source is listed. |
 | `<slug>-tasks.md` | A context block for the coding agent, then dependency-ordered tasks with machine-checkable acceptance criteria, sized half a day to two days each. For a "build it if" verdict it holds only the validation experiment. |
 
-For a full example, see [`examples/changelog-cli-可行性分析.md`](examples/changelog-cli-可行性分析.md) (in Chinese): a real run on the idea "a CLI that auto-generates changelogs for indie developers". The verdict was "don't build it", so there is no task list to go with it.
+For a full example, see [`examples/changelog-cli-feasibility.md`](examples/changelog-cli-feasibility.md): a real run on the idea "a CLI that auto-generates changelogs for indie developers". The verdict was "don't build it", so there is no task list to go with it. The run was done in Chinese; the English file is a translation of [the original report](examples/changelog-cli-可行性分析.md).
 
 ## Install
 
