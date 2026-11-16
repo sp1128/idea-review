@@ -10,3 +10,6 @@ node_modules/
 *-tasks.md
 *-可行性分析.md
 *-开发任务清单.md
+
+# Curated examples are the exception
+!examples/*.md
