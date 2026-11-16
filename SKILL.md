@@ -40,12 +40,14 @@ Break it into four lines so the user can immediately see whether you understood 
 
 If you can't fill in any one of these lines, the idea isn't formed yet. Stop here: tell the user which line is missing and ask for it, instead of forcing out a report built on a guess. When running unattended, pick the most plausible reading, flag it as an assumption at the top, and continue.
 
+The "why better" line is the one most often missing, because people pitch what they want to build, not why it would win. Never fill it in silently with a flattering guess. If you do have to supply it yourself, mark it in the report as your reading and not the user's claim, then let the research in step 3 test it. When existing tools already do exactly that, the missing line is the finding, and it belongs in the verdict.
+
 ### 3. Research (do not skip)
 
 **Research before judging.** Fire parallel searches in one batch rather than serially. Cover at least:
 
 - **Direct competitors**: name, pricing, user base or reviews. Search in English *and* in the user's local-market language — the answers often differ.
-- **The graveyard**: who tried this and shut down or pivoted, and why. A dead competitor tells you more than a live one.
+- **The graveyard**: who tried this and shut down or pivoted, and why. A dead competitor tells you more than a live one. Small tools rarely publish a shutdown notice, so when this search comes back empty, look for the quiet version: repositories with near-zero stars or no commits in a year, and launch posts that drew no replies. Report those with their numbers. Several launches that nobody noticed is a finding about demand, not an absence of data.
 - **Open-source alternatives**: what already exists on GitHub (stars, last commit, activity).
 - **State of the enabling tech**: is the hard part already a mature library or API, and what does it cost? For metered APIs, work out the per-unit cost and compare it with what a user would plausibly pay.
 - **Demand-side signal**: is anyone on Reddit, Hacker News, or the relevant local forums complaining about this problem? Complaints with workarounds are strong signal; silence is signal too.
@@ -81,7 +83,7 @@ Then the **verdict**, exactly one of:
 - **Build something smaller** — the idea is too big; name the smaller thing to do first
 - **Don't build it** — give the reason, and one adjacent direction worth more
 
-The verdict has to follow from the scorecard, and scores are not averaged: one fatal dimension outweighs four good ones. A 1 on pain, feasibility or risk rules out a plain "Build it".
+The verdict has to follow from the scorecard, and scores are not averaged: one fatal dimension outweighs four good ones. A 1 on any dimension that applies rules out a plain "Build it". For a commercial product, a 1 on Differentiation & moat or Path to revenue usually means "Don't build it" or "Build something smaller", however easy the thing is to make: high scores on feasibility and cost only say that it can be built, not that it should be.
 
 ### 5. Technical plan
 
