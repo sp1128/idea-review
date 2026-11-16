@@ -95,7 +95,7 @@ Pushback?  ← the verdict moves for new facts, not for enthusiasm
 | Path to revenue | Who pays, how much, when. |
 | Risk | Compliance, platform dependency, legal, single points of failure. |
 
-5 is always the favourable end, so a 5 on Risk means safe. Scores are not averaged: one fatal dimension outweighs four good ones, and a 1 on pain, feasibility or risk rules out a plain "build it". For a personal tool, Market size and Path to revenue are marked "n/a" instead of counting against the idea.
+5 is always the favourable end, so a 5 on Risk means safe. Scores are not averaged: one fatal dimension outweighs four good ones, and a 1 on any dimension that applies rules out a plain "build it". For a personal tool, Market size and Path to revenue are marked "n/a" instead of counting against the idea.
 
 A scorecard where everything lands on 4 is noise. The skill is instructed to give a 2 when a 2 is right.
 
